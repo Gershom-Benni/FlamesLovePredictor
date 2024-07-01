@@ -50,7 +50,7 @@ submit.addEventListener("click",function render(){
   var queen_name = document.getElementById("queens-name").value;
     // text_area.style.display = "none";
     text_area.innerHTML = " ";
-    text_area.innerHTML = '<img src="/images/heart.png" id="heart" />';
+    text_area.innerHTML = '<img src="/images/heart.png" loading="lazy" id="heart" />';
     setInterval(function () {
         text_area.innerHTML = " ";
         text_area.innerHTML = `<p class="rendered_king_name">${king_name}</p>`;
