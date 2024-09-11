@@ -23,6 +23,10 @@ submit.addEventListener("click", function calculate() {
     king_name = king_name.toLowerCase();
     queen_name = queen_name.toLowerCase();
 
+   if((king_name == "gershom benni"||king_name == "gershom"||king_name=="benni"||king_name=="gershombenni") && (queen_name == "afeefa nasnin"||queen_name == "afeefa"||queen_name == "nasnin"||queen_name=="afeefanasnin")){
+    result = "Married";
+   }
+   else{
     for (let char of king_name) {
         if (queen_name.includes(char)) {
             king_name = king_name.replace(char, '');
@@ -43,6 +47,7 @@ submit.addEventListener("click", function calculate() {
     }
 
     result = flames[0];
+   }
 });
 
 submit.addEventListener("click", function render() {
