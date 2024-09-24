@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: inherit;
 }
+
 .main{
     height: 100vh;
     width: 100vw;
@@ -15,6 +17,8 @@
     align-items: center;
     justify-content: center;
 }
+
+/* Omit for now */
 .login_menu{
     height: 500px;
     width: 400px;
@@ -25,6 +29,7 @@
     border-radius: 20px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
 .heading{
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -34,9 +39,11 @@
     text-align: center;
     margin-top: 50px;
 }
+
 #text_area{
     display: block;
 }
+
 .heading_2{
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -49,6 +56,7 @@
     margin-top: 20px;
     /* text-transform: uppercase; */
 }
+
 #king-name,#queens-name{
     display: block;
     width: 300px;
@@ -64,6 +72,7 @@
     font-family: "Dancing Script", cursive;
     font-size: 20px;
 }
+
 #calculate-btn{
     display: block;
     width: 250px;
@@ -85,10 +94,12 @@
     cursor: pointer;
     transition: all 0.8s;
 }
+
 #calculate-btn:active{
     width: 320px;
     background: linear-gradient(to right, #ff0066 0%, #ff3399 50%);
 }
+
 @keyframes scaleAnimation {
     0%, 100% {
       transform: scale(0.5); 
@@ -103,6 +114,7 @@
     margin-left: 75px;
     margin-top: 100px;
 }
+
 .rendered_king_name{
     margin-top: 25px;
     font-family:  "Dancing Script", cursive;
@@ -110,12 +122,14 @@
     text-align: center;
     color: white;
 }
+
 .rendered_queen_name{
     font-family:  "Dancing Script", cursive;
     font-size: 60px;
     text-align: center;
     color: white;
 }
+
 .rendered_para{
     font-family:  "Dancing Script", cursive;
     font-size: 30px;
@@ -123,6 +137,7 @@
     color: white;
     margin-top: 10px;
 }
+
 .rendered_result{
     font-family:  "Dancing Script", cursive;
     font-size: 60px;
@@ -130,6 +145,7 @@
     margin-top: 10px;
     color: red;
 }
+
 .copyright{
     color: white;
     font-family: 'poppins',sans-serif;
@@ -138,6 +154,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 #retry-btn{
     display: block;
     width: 250px;
@@ -159,6 +176,7 @@
     cursor: pointer;
     transition: all 0.8s;
 }
+
 #retry-btn:active{
     width: 320px;
     background: linear-gradient(to right, #ff0066 0%, #ff3399 50%);
@@ -172,6 +190,7 @@
         margin-left: 50px;
     }
 }
+
 @media only screen and (max-width:401px) {
     .heading{
         font-size: 65px;
