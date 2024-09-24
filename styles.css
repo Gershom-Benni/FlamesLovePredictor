@@ -1,205 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: inherit;
 }
-.main{
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to bottom left, #0000ff 0%, #cc0099 100%);
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.login_menu{
+
+.login_menu {
     height: 500px;
     width: 400px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
 }
-.heading{
+
+.heading {
     font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight:700;
+    font-weight: 700;
     color: white;
     font-size: 75px;
     text-align: center;
-    margin-top: 50px;
-}
-#text_area{
-    display: block;
-}
-.heading_2{
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight:500;
-    color: white;
-    font-size: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 20px;
-    /* text-transform: uppercase; */
-}
-#king-name,#queens-name{
-    display: block;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border: none;
-    border-radius: 20px;
-    margin-top:30px;
-    font-family: "Dancing Script", cursive;
-    font-size: 20px;
-}
-#calculate-btn{
-    display: block;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    font-family: "Dancing Script", cursive;
-    color: white;
-    font-weight: 700;
-    border: solid 2px;
-    border-color: white;
-    border-radius: 20px;
-    margin-top: 30px;
-    background: linear-gradient(to right, #ff0066 0%, #ff3399 100%);
-    cursor: pointer;
-    transition: all 0.8s;
-}
-#calculate-btn:active{
-    width: 320px;
-    background: linear-gradient(to right, #ff0066 0%, #ff3399 50%);
-}
-@keyframes scaleAnimation {
-    0%, 100% {
-      transform: scale(0.5); 
-    }
-    50% {
-      transform: scale(1);
-    }
-  }
-#heart{
-    width: 250px;
-    animation: scaleAnimation 2s infinite alternate ease-in-out;
-    margin-left: 75px;
-    margin-top: 100px;
-}
-.rendered_king_name{
-    margin-top: 25px;
-    font-family:  "Dancing Script", cursive;
-    font-size: 60px;
-    text-align: center;
-    color: white;
-}
-.rendered_queen_name{
-    font-family:  "Dancing Script", cursive;
-    font-size: 60px;
-    text-align: center;
-    color: white;
-}
-.rendered_para{
-    font-family:  "Dancing Script", cursive;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-}
-.rendered_result{
-    font-family:  "Dancing Script", cursive;
-    font-size: 60px;
-    text-align: center;
-    margin-top: 10px;
-    color: red;
-}
-.copyright{
-    color: white;
-    font-family: 'poppins',sans-serif;
-    font-weight: 200;
-    font-size: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#retry-btn{
-    display: block;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    font-family: "Dancing Script", cursive;
-    color: white;
-    font-weight: 700;
-    border: solid 2px;
-    border-color: white;
-    border-radius: 20px;
-    margin-top: 30px;
-    background: linear-gradient(to right, #ff0066 0%, #ff3399 100%);
-    cursor: pointer;
-    transition: all 0.8s;
-}
-#retry-btn:active{
-    width: 320px;
-    background: linear-gradient(to right, #ff0066 0%, #ff3399 50%);
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width:440px) {
-    .login_menu{
-        width: 350px;
+.heading_2 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#king-name, #queens-name {
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+}
+
+#calculate-btn, #retry-btn {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+    color: white;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: linear-gradient(to right, #ff0066 0%, #ff3399 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#calculate-btn:active, #retry-btn:active {
+    background: linear-gradient(to right, #ff0066 0%, #ff3399 50%);
+    transform: scale(1.05);
+}
+
+#heart {
+    width: 250px;
+    animation: scaleAnimation 2s infinite alternate ease-in-out;
+    margin: 50px auto;
+    display: block;
+}
+
+.rendered_king_name, .rendered_queen_name, .rendered_para, .rendered_result {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: white;
+    margin: 10px auto;
+}
+
+.rendered_king_name, .rendered_queen_name, .rendered_result {
+    font-size: 60px;
+}
+
+.rendered_para {
+    font-size: 30px;
+}
+
+.copyright {
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+}
+
+@keyframes scaleAnimation {
+    0%, 100% {
+        transform: scale(0.5);
     }
-    #heart{
-        margin-left: 50px;
+    50% {
+        transform: scale(1);
     }
 }
-@media only screen and (max-width:401px) {
-    .heading{
-        font-size: 65px;
+
+@media only screen and (max-width: 440px) {
+    .login_menu {
+        width: 350px;
     }
-    .heading_2{
+
+    #heart {
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width: 401px) {
+    .heading {
+        font-size: 60px;
+    }
+
+    .heading_2 {
         font-size: 25px;
     }
-    .login_menu{
+
+    .login_menu {
+        width: 300px;
         height: 450px;
-        width: 290px;
     }
-    #king-name,#queens-name{
-        width: 240px;
+
+    #king-name, #queens-name, #calculate-btn, #retry-btn {
+        width: 80%;
     }
-    #calculate-btn{
-        width: 150px;
-        font-size: 15px;
-    }
-    #heart{
+
+    #heart {
         width: 180px;
-        margin-left: 53px;
     }
-    #retry-btn{
-        width: 150px;
-        font-size: 15px;
-        margin-top: 10px;
+
+    .rendered_king_name, .rendered_queen_name, .rendered_result {
+        font-size: 50px;
     }
-    .rendered_king_name{
-        margin-top: 10px;
+
+    .rendered_para {
+        font-size: 25px;
     }
 }
