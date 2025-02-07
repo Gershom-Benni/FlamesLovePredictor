@@ -29,3 +29,6 @@ This game, often used as a light-hearted predictor of relationships, is now avai
 2. **Calculate Relationship:** Click the "Calculate" button to compute the FLAMES relationship.
 3. **View Results:** The compatibility result, along with a beautiful confetti animation, will be displayed on the screen.
 4. **Try Again:** Click the "Try Again" button to reset the inputs and start over with new names.
+
+## Try Here
+https://flameslovepredictor.netlify.app/
